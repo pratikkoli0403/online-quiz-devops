@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>QuickQuiz | Online Quiz</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="#"><span class="brand-mark">Q</span> QuickQuiz</a>
+    <span class="tag">Practice • Learn • Improve</span>
+  </header>
+
+  <main class="layout">
+    <section class="intro">
+      <p class="eyebrow">WELCOME BACK</p>
+      <h1>Test your knowledge.<br><span>One question at a time.</span></h1>
+      <p class="intro-copy">A simple quiz demo built with HTML, CSS and JavaScript. Choose an answer, submit, and see your score.</p>
+      <div class="stats">
+        <div><strong>05</strong><span>Questions</span></div>
+        <div><strong>~3 min</strong><span>Duration</span></div>
+        <div><strong>Free</strong><span>To practice</span></div>
+      </div>
+    </section>
+
+    <section class="quiz-card" aria-live="polite">
+      <div class="quiz-head">
+        <div><p class="eyebrow">QUICK QUIZ</p><h2 id="quiz-title">Web & Tech Basics</h2></div>
+        <span class="counter" id="counter">01 / 05</span>
+      </div>
+      <div class="progress"><span id="progress-bar"></span></div>
+      <p class="question-label">QUESTION <span id="question-number">01</span></p>
+      <h3 id="question">Loading question…</h3>
+      <div class="options" id="options"></div>
+      <p class="feedback" id="feedback"></p>
+      <div class="actions">
+        <button class="secondary" id="restart" type="button">Restart</button>
+        <button class="primary" id="next" type="button" disabled>Submit answer <span>→</span></button>
+      </div>
+      <p class="hint">Select one option to continue.</p>
+    </section>
+  </main>
+  <footer>QuickQuiz Demo <span>•</span> Frontend-only student project</footer>
+  <script src="script.js"></script>
+</body>
+</html>
